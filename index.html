@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberTech - Tienda de Tecnología</title>
+    <meta name="description" content="Tienda de Componentes de Alta Gama, Consolas y Videojuegos."/>
+    <link rel="shortcut icon" href="../assets/img/logosena.png" type="image/x-icon" />
+    <meta name="author" content="Yeison Escobar" />
+    <meta name="keywords" content="Taller4, Tienda PC, video juegos" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-controller me-2"></i>CyberTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle me-1"></i>Mi Cuenta
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="app/admin.html"><i class="bi bi-speedometer2 me-2"></i>Panel Admin</a></li>
+                        <li><a class="dropdown-item" href="app/cliente.html"><i class="bi bi-person-badge me-2"></i>Panel Cliente</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="app/login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a></li>
+                        <li><a class="dropdown-item" href="app/recuperar.html"><i class="bi bi-key me-2"></i>Recuperar Contraseña</a></li>
+                        <li><a class="dropdown-item" href="app/registro.html"><i class="bi bi-person-plus me-2"></i>Registro</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="app/registro.html">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide mt-5 pt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 450px; background-color: #212529;">
+                <img src="assets/img/omen.jpg" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Hardware de PC">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Componentes de Alta Gama</h1>
+                    <p>Arma la PC de tus sueños con nosotros.</p>
+                    <a href="app/registro.html" class="btn btn-primary btn-lg mt-2">¡Regístrate Ahora!</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 450px; background-color: #212529;">
+                <img src="assets/img/ps5.jpg" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Consolas y Videojuegos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Consolas y Videojuegos</h1>
+                    <p>Encuentra las últimas novedades del mundo gamer.</p>
+                    <a href="app/login.html" class="btn btn-primary btn-lg mt-2">Accede a tu cuenta</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 450px; background-color: #212529;">
+                <img src="assets/img/hyperx.jpg" class="d-block w-100 h-100 object-fit-cover opacity-50" alt="Periféricos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Periféricos Premium</h1>
+                    <p>Precisión y velocidad para tus partidas.</p>
+                    <a href="#productos" class="btn btn-primary btn-lg mt-2">Ver Catálogo</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestras Categorías</h2>
+                <p class="text-muted">Todo lo que necesitas para tu setup en un solo lugar.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/PCsEnsambladas.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="PCs">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">PCs Ensambladas</h5>
+                            <p class="card-text">Equipos listos para jugar o trabajar a la máxima potencia y rendimiento.</p>
+                            <a href="app/login.html" class="btn btn-outline-primary">Ver Modelos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/componentes.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Componentes">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Componentes</h5>
+                            <p class="card-text">Tarjetas gráficas, procesadores, memorias RAM y más para actualizar tu equipo.</p>
+                            <a href="app/login.html" class="btn btn-outline-primary">Comprar Partes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/perifericosaccesorios.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Periféricos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Periféricos y Accesorios</h5>
+                            <p class="card-text">Teclados mecánicos, mouses ergonómicos, diademas y monitores de alta tasa de refresco.</p>
+                            <a href="app/login.html" class="btn btn-outline-primary">Ver Accesorios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller me-2"></i>CyberTech</h5>
+                    <p class="text-muted small">Tu tienda de confianza para comprar componentes, PCs y consolas en línea.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+                        <li class="mb-2"><a href="app/login.html" class="text-decoration-none text-muted">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="app/registro.html" class="text-decoration-none text-muted">Registrarse</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Contacto Institucional</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><i class="bi bi-globe me-2"></i><a href="https://www.sena.edu.co" target="_blank" class="text-decoration-none text-muted">www.sena.edu.co</a></li>
+                        <li class="mb-2"><i class="bi bi-twitter me-2"></i><a href="https://twitter.com/SENAComunica" target="_blank" class="text-decoration-none text-muted">@SENAComunica</a></li>
+                        <li class="mb-2"><i class="bi bi-building me-2"></i>SENA</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-3 mb-2">
+            <div class="text-center text-muted small">
+                &copy; 2026 CyberTech - Proyecto formativo desarrollado con Bootstrap 5.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

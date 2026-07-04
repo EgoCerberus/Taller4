@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="es-CO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Yeison Escobar | Desarrollador de Software en formación</title>
+
+        <meta
+        name="description"
+        content="Tienda de Componentes de Alta Gama, Consolas y Videojuegos."/>
+
+        <link rel="shortcut icon" href="assets/img/logosena.png" type="image/x-icon" />
+
+        <meta name="author" content="Yeison Escobar" />
+        <meta name="keywords" content="Taller4, Tienda PC, video juegos" />
+
+        <meta name="theme-color" content="#000000" />
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Panel de Cliente - CyberTech</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html"><i class="bi bi-controller me-2"></i>CyberTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle me-1"></i>Mi Cuenta
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="admin.html"><i class="bi bi-speedometer2 me-2"></i>Panel Admin</a></li>
+                        <li><a class="dropdown-item" href="cliente.html"><i class="bi bi-person-badge me-2"></i>Panel Cliente</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a></li>
+                        <li><a class="dropdown-item" href="recuperar.html"><i class="bi bi-key me-2"></i>Recuperar Contraseña</a></li>
+                        <li><a class="dropdown-item" href="registro.html"><i class="bi bi-person-plus me-2"></i>Registro</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="registro.html">Registro</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><i class="bi bi-controller me-2"></i>CyberTech - Mi Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="cliente.html">Panel Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        
+        <div class="alert alert-warning alert-dismissible fade show shadow-sm border-0 mb-4" role="alert">
+            <strong><i class="bi bi-exclamation-triangle-fill me-2"></i>¡Recuerda!</strong> Es necesario que subas el certificado de garantía y factura de tu equipo para validar soporte técnico.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+                    <div class="card-body text-center p-4 d-flex flex-column align-items-center justify-content-center">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Foto de Perfil" class="rounded-circle img-thumbnail mb-3 shadow-sm" style="width: 120px; height: 120px; object-fit: cover;">
+                        <h4 class="fw-bold mb-1">Carlos Mendoza</h4>
+                        <p class="text-muted small mb-3">carlos.mendoza@correo.com</p>
+                        <span class="badge bg-primary mb-3">Nivel: Cliente Premium</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm w-100">Editar Perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-transparent border-0 pt-4 px-4">
+                        <h4 class="fw-bold m-0"><i class="bi bi-bag-check me-2 text-primary"></i>Mis Compras e Inscripciones</h4>
+                    </div>
+                    <div class="card-body px-4">
+                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold" id="activas-tab" data-bs-toggle="tab" data-bs-target="#activas" type="button" role="tab" aria-controls="activas" aria-selected="true">Activas / En Proceso</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold" id="historial-tab" data-bs-toggle="tab" data-bs-target="#historial" type="button" role="tab" aria-controls="historial" aria-selected="false">Historial</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="activas" role="tabpanel" aria-labelledby="activas-tab">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">PC Gamer Armada - RTX 4060</h6>
+                                            <small class="text-muted">Fecha de compra: 26 de Junio, 2026</small>
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill text-dark">En camino</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="historial" role="tabpanel" aria-labelledby="historial-tab">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Teclado Mecánico Redragon</h6>
+                                            <small class="text-muted">Entregado el 15 de Mayo, 2026</small>
+                                        </div>
+                                        <span class="badge bg-success rounded-pill">Finalizado</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Mouse Pad RGB</h6>
+                                            <small class="text-muted">Entregado el 02 de Abril, 2026</small>
+                                        </div>
+                                        <span class="badge bg-success rounded-pill">Finalizado</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center small text-muted">
+            <a href="https://www.sena.edu.co" target="_blank" class="text-decoration-none text-muted">www.sena.edu.co</a> | <a href="https://twitter.com/SENAComunica" target="_blank" class="text-decoration-none text-muted">@SENAComunica</a> | SENA
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
