@@ -9,7 +9,6 @@
 * **Barra de Navegación Unificada:** Un menú de navegación fijo (`fixed-top`) con transiciones homogéneas de estilo oscuro (`btn-dark`) al pasar el cursor (*hover*) por cada una de sus opciones e iconos integrados.
 * **Componente de Carrusel (Hero Section):** Un slider interactivo para destacar promociones de hardware, consolas y periféricos con imágenes de fondo optimizadas mediante CSS (`object-fit-cover`).
 * **Sección de Categorías:** Organización modular en tarjetas (*cards*) para clasificar de forma atractiva los productos (PCs Ensambladas, Componentes y Accesorios).
-* **Pie de Página Completo:** Incluye enlaces de navegación rápida y los canales oficiales de contacto institucional.
 
 ## 🛠️ Tecnologías Utilizadas
 
